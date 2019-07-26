@@ -1,16 +1,22 @@
 init:
-    image 아이린 happy = im.Scale("1.png", 600, 600)
+    image cool neutral = im.Scale("pink/neutral.png", 600, 600)
+    image sis touchingHair = im.Scale("peach/touchingHair.png", 600, 600)
+    image red tilted = im.Scale("red/tilted.png", 600, 600)
+    image bg room = "backgrounds/room.jpg"
 
-define e = Character('아이린', color="#c8ffc8")
+define sis = Character('핑크', color="#c8ffc8")
+define cool = Character('피치', color="#c8ffc8")
+define red = Character('레드', color="#c8ffc8")
 
 
 label start:
 
-    e "새로운 렌파이 게임을 만들었군요."
+    scene bg room with dissolve
 
-    show 아이린 happy with dissolve
-    e "새로운 렌파이 게임을 만들었군요."
+    "내 이름은 코구치 쿠로우시(虎口 黑牛)"
 
-    e "이야기와 그림, 음악을 더하면 여러분의 게임을 세상에 배포할 수 있어요!"
+    "대학교 2학년이다."
+
+    "그래서 어쩌라고"
 
     return
