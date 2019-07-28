@@ -8,12 +8,29 @@ init:
     image sisterImage smiling = im.Scale("peach/smiling.png", 600, 600)
     image sisterImage smirk = im.Scale("peach/smirk.png", 600, 600)
     image sisterImage touchingHair = im.Scale("peach/touchingHair.png", 600, 600)
-    image red tilted = im.Scale("red/tilted.png", 600, 600)
-    image bg room = "backgrounds/room.jpg"
 
-define p = Character('핑크', color="#c8ffc8")
+    image pinkImage annoyed = im.Scale("pink/annoyed.png", 600, 600)
+    image pinkImage attentive = im.Scale("pink/attentive.png", 600, 600)
+    image pinkImage curious = im.Scale("pink/curious.png", 600, 600)
+    image pinkImage going = im.Scale("pink/going.png", 600, 600)
+    image pinkImage neutral = im.Scale("pink/neutral.png", 600, 600)
+    image pinkImage smiling = im.Scale("pink/smiling.png", 600, 600)
+    image pinkImage smiling2 = im.Scale("pink/smiling2.png", 600, 600)
+    image pinkImage tilted = im.Scale("pink/tilted.png", 600, 600)
+    image pinkImage tilted2 = im.Scale("pink/tilted2.png", 600, 600)
+
+
+    image red tilted = im.Scale("red/tilted.png", 600, 600)
+    image church = im.Scale("church.png", 600, 600)
+
+    image bg room = "backgrounds/room.jpg"
+    image bg campus = "backgrounds/campus.jpeg"
+    image bg school = "backgrounds/school.jpeg"
+
+define p = Character('아야', color="#c8ffc8")
 define sis = Character('유이', color="#c8ffc8", image="sisterImage")
 define questionmark = Character('???', color="#c8ffc8")
+define c = Character('윤리학과 신입생?', color="#c8ffc8")
 define me = Character('나')
 define red = Character('레드', color="#c8ffc8")
 
@@ -21,6 +38,8 @@ define red = Character('레드', color="#c8ffc8")
 label start:
 
     scene bg room with dissolve
+
+    "아침 8시, 집"
 
     "내 이름은 코구치 쿠로우시(虎口 黑牛)"
 
@@ -84,6 +103,90 @@ label start:
 
     "이렇게 귀여운 여동생과 사이가 좋다니... 정말 나는 운이 좋은 것 같다"
 
-    "to be continued"
+    scene bg campus with dissolve
+
+    "아침 9시, 학교 캠퍼스 안"
+
+    "1교시를 신청해버린 불쌍한 학우들의 분주한 움직임이 보인다."
+
+    "내 수업은 시작이 아직 많이 남았으니 느긋하게 도서관에 들렀다 갈 생각이다."
+
+    questionmark "저기요, 잠시만요"
+
+    show church with dissolve
+
+    me "네?"
+
+    questionmark "저기 혹시 여기 서점이 어디있는지 아세요?"
+
+    me "서점이요?"
+
+    c "네 제가 윤리학과 신입생인데요, 이 쪽을 잘 몰라가지고.."
+
+    "우리 학교에 윤리학과도 있었구나.."
+
+    me "아 서점이라면 저쪽 건물이 교보문고가 하나 있어요"
+
+    c "아 정말 감사합니다! 완전 헤매고 있었는데 덕분에"
+
+    c "혹시 지금 수업가고 계시나요?"
+
+    me "아 아뇨 도서관 가는 중이었어요"
+
+    c "제가 신입생이고 해서 진로가 요즘 좀 고민이라서 다른분들하고 얘기를 좀 하고 싶어서요"
+
+    me "아 그러세요? 다음수업까지 좀 시간이 남긴 하네요"
+
+    c "아 정말요? 정말 다행이다~! 그럼 같이 커피 한잔 해요!"
+
+    me "그럴까요?"
+
+    questionmark "쿠로우시 군!"
+
+    "갑자기 뒤에서 누군가 부르는 소리가 들렸다"
+
+    show pink smiling with dissolve
+
+    questionmark "기다리고 있었는데 여기서 뭐하고 있어?"
+
+    me "응?"
+
+    "이 녀석은 토우죠 아야"
+
+    "작년부터 수업을 같이 듣는 게 많아서 친해졌다"
+
+    pink "뭐해여기서? 5분 전부터 기다리고 있었다고!"
+
+    me "???"
+
+    show pink smiling2 with dissolve
+
+    "갑자기 아야가 팔짱을 꼈다"
+
+    pink "우리 같이 도서관에서 공부하기로 했잖아! 빨리와!"
+
+    "팔을 끌어당기더니 갑자기 걷기 시작했다"
+
+    me "아앗!"
+
+    "어느 샌가 아까 그 윤리학과 학생은 안보였다"
+
+    me "헉헉.. 갑자기 뭐하는 짓이야?"
+
+    pink tilted "뭐하냐 너"
+
+    me "너야말로 뭐해? 난 약속 잡은 기억 없는데?"
+
+    pink "저 사람하고 뭐하고 있었어?"
+
+    me "저 사람 윤리학과 학생이라고 좀 도와달라고 하던데?"
+
+    pink annoyed "우리학교에 윤리학과는 없어 멍청아"
+
+    me "아 그래? 그럼 저 사람은 뭐지?"
+
+    pink ""
+
+    me "그래?"
 
     return
