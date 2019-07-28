@@ -9,16 +9,15 @@ init:
     image sisterImage smirk = im.Scale("peach/smirk.png", 600, 600)
     image sisterImage touchingHair = im.Scale("peach/touchingHair.png", 600, 600)
 
-    image pinkImage annoyed = im.Scale("pink/annoyed.png", 600, 600)
-    image pinkImage attentive = im.Scale("pink/attentive.png", 600, 600)
-    image pinkImage curious = im.Scale("pink/curious.png", 600, 600)
-    image pinkImage going = im.Scale("pink/going.png", 600, 600)
-    image pinkImage neutral = im.Scale("pink/neutral.png", 600, 600)
-    image pinkImage smiling = im.Scale("pink/smiling.png", 600, 600)
-    image pinkImage smiling2 = im.Scale("pink/smiling2.png", 600, 600)
-    image pinkImage tilted = im.Scale("pink/tilted.png", 600, 600)
-    image pinkImage tilted2 = im.Scale("pink/tilted2.png", 600, 600)
-
+    image ayaImage annoyed = im.Scale("pink/annoyed.png", 600, 600)
+    image ayaImage attentive = im.Scale("pink/attentive.png", 600, 600)
+    image ayaImage curious = im.Scale("pink/curious.png", 600, 600)
+    image ayaImage going = im.Scale("pink/going.png", 600, 600)
+    image ayaImage neutral = im.Scale("pink/neutral.png", 600, 600)
+    image ayaImage smiling = im.Scale("pink/smiling.png", 600, 600)
+    image ayaImage smiling2 = im.Scale("pink/smiling2.png", 600, 600)
+    image ayaImage tilted = im.Scale("pink/tilted.png", 600, 600)
+    image ayaImage tilted2 = im.Scale("pink/tilted2.png", 600, 600)
 
     image red tilted = im.Scale("red/tilted.png", 600, 600)
     image church = im.Scale("church.png", 600, 600)
@@ -27,7 +26,7 @@ init:
     image bg campus = "backgrounds/campus.jpeg"
     image bg school = "backgrounds/school.jpeg"
 
-define p = Character('아야', color="#c8ffc8")
+define aya = Character('아야', color="#c8ffc8", image='pinkImage')
 define sis = Character('유이', color="#c8ffc8", image="sisterImage")
 define questionmark = Character('???', color="#c8ffc8")
 define c = Character('윤리학과 신입생?', color="#c8ffc8")
@@ -145,7 +144,7 @@ label start:
 
     "갑자기 뒤에서 누군가 부르는 소리가 들렸다"
 
-    show pink smiling with dissolve
+    show ayaImage smiling with dissolve
 
     questionmark "기다리고 있었는데 여기서 뭐하고 있어?"
 
@@ -155,15 +154,15 @@ label start:
 
     "작년부터 수업을 같이 듣는 게 많아서 친해졌다"
 
-    pink "뭐해여기서? 5분 전부터 기다리고 있었다고!"
+    aya "뭐해여기서? 5분 전부터 기다리고 있었다고!"
 
     me "???"
 
-    show pink smiling2 with dissolve
+    show ayaImage smiling2 with dissolve
 
     "갑자기 아야가 팔짱을 꼈다"
 
-    pink "우리 같이 도서관에서 공부하기로 했잖아! 빨리와!"
+    aya "우리 같이 도서관에서 공부하기로 했잖아! 빨리와!"
 
     "팔을 끌어당기더니 갑자기 걷기 시작했다"
 
@@ -173,20 +172,32 @@ label start:
 
     me "헉헉.. 갑자기 뭐하는 짓이야?"
 
-    pink tilted "뭐하냐 너"
+    aya tilted "뭐하냐 너"
 
     me "너야말로 뭐해? 난 약속 잡은 기억 없는데?"
 
-    pink "저 사람하고 뭐하고 있었어?"
+    aya "저 사람하고 뭐하고 있었어?"
 
     me "저 사람 윤리학과 학생이라고 좀 도와달라고 하던데?"
 
-    pink annoyed "우리학교에 윤리학과는 없어 멍청아"
+    aya annoyed "우리학교에 윤리학과는 없어 멍청아"
 
     me "아 그래? 그럼 저 사람은 뭐지?"
 
-    pink ""
+    aya "뭐 너 납치해서 장기를 팔거나 할려고했겠지"
 
-    me "그래?"
+    me "헉.. 그래?"
+
+    aya "농담이야, 다단계나 종교같은거 아닐까?"
+
+    me "그렇구나, 몰랐어 고마워"
+
+    aya smiling2 "그치 구해줘서 고맙지?"
+
+    me "?"
+
+    aya smiling2 "나 혹시 5만원만 빌려줄 수 있을까?"
+
+    me "뭐?"
 
     return
